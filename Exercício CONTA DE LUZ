@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+
+{
+	float conta;
+	
+	printf("Informe o valor da sua conta de luz: ");
+    scanf("%f", &conta);
+    
+    if (conta > 50){
+    printf("Você está gastando muito");
+	}
+	
+}
