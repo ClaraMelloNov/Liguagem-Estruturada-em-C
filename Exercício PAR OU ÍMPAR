@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main () {
+
+int N1;
+printf ("Digite um número: ");
+scanf("%d", &N1);
+
+if (N1%2==0)
+printf("o número é par");
+else 
+printf("o número é ímpar");
+
+}
