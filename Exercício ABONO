@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int main()
+
+{
+
+    int ano;
+    char sexo;
+    float salario;
+    float abono;
+    int idade;
+
+    printf("Forneça o seu ano de nascimento: ");
+    scanf("%d", &ano);
+
+ 	printf("Informe seu gênero: ");
+    scanf("%c", &sexo);
+
+    printf("Informe seu salario bruto: ");
+    scanf("%f", &salario);
+
+    idade = 2022 - ano;
+
+    if (idade >= 40) {
+    	abono = 0.15 * salario;
+    	printf("Abono concedido: %f \n", abono);
+    }
+    else if (idade < 40) {
+    	abono = 0.25 * salario;
+    	printf("Abono concedido: %f \n", abono);
+    }
+    
+    printf("Sua idade é %d anos. \n", idade);
+    printf("Seu salário bruto é de %.2f reais.\n", salario);
+    printf("O valor do abono condedido é %.2f.\n", abono);
+    printf("Seu salário bruto acrescido do valor do abono é %.2f reais.\n", salario + abono);
+}
+
