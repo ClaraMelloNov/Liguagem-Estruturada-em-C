@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+
+{
+
+    int tempo;
+    float capital;
+    float montante;
+    float taxa;
+
+    printf("Forneça o período de tempo: ");
+    scanf("%d", &tempo);
+
+    printf("Forneça o capital inicial investido: ");
+    scanf("%f", &capital);
+
+    printf("Forneça a taxa de juros: ");
+    scanf("%f", &taxa);
+
+    /* O montante financeiro é calculado por: MONTANTE = CAPITAL (1 + TAXA) ^ TEMPO mas considerei a formula abaixo informada no documento*/
+    
+    montante = capital * (1 + taxa) * tempo;
+    
+
+    if (montante >= 2 * capital) {
+       printf("\nInvestimento seguro");
+    }
+    else{
+        printf("\nInvestimento sem segurança");
+    }
+
+}
